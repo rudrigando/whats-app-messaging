@@ -24,6 +24,8 @@ A solution é composta por múltiplos projetos, cada um com responsabilidade cla
   Implementa as interfaces do Core, permitindo que a solução se comunique com o serviço Twilio de forma transparente e segura.
 
 ## Estrutura dos Projetos
+
+```text
 src/
 ├── Core/
 │   └── WhatsApp.Messaging.Core/
@@ -35,6 +37,7 @@ src/
 └── Providers/
     └── Twilio/
         └── WhatsApp.Messaging.Twilio/
+```
 
 ## Principais Funcionalidades
 
