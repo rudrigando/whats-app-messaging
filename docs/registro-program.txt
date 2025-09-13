@@ -1,0 +1,56 @@
+1) Mínimo necessário (Program.cs)
+
+using WhatsApp.Messaging.Twilio.DependencyInjection; // tem o AddTwilioWhatsApp e AddWhatsAppMessagingTwilio
+
+var builder = WebApplication.CreateBuilder(args);
+
+builder.Services.AddWhatsAppMessagingTwilio(builder.Configuration);
+
+var app = builder.Build();
+app.Run();
+
+2) Com EF Core como store (Program.cs)
+
+using Microsoft.EntityFrameworkCore;
+using WhatsApp.Messaging.Twilio.DependencyInjection;
+using WhatsApp.Messaging.Storage.EFCore.DependencyInjection; // AddWhatsAppEfStorage
+
+var builder = WebApplication.CreateBuilder(args);
+
+builder.Services
+    .AddWhatsAppMessagingTwilio(builder.Configuration)
+    .AddWhatsAppEfStorage(db =>
+        db.UseSqlServer(builder.Configuration.GetConnectionString("WhatsApp")));
+
+var app = builder.Build();
+app.Run();
+
+3) Com Dapper como store (Program.cs)
+
+using WhatsApp.Messaging.Twilio.DependencyInjection;
+using WhatsApp.Messaging.Storage.Dapper.DependencyInjection; // AddWhatsAppDapperStorage
+
+var builder = WebApplication.CreateBuilder(args);
+
+builder.Services
+    .AddWhatsAppMessagingTwilio(builder.Configuration)
+    .AddWhatsAppDapperStorage(builder.Configuration.GetConnectionString("WhatsApp"));
+
+var app = builder.Build();
+app.Run();
+
+
+4) appsettings.json (exemplo da seção Twilio)
+
+{
+  "Twilio": {
+    "AccountSid": "ACxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx",
+    "AuthToken": "your_auth_token",
+    "FromNumber": "whatsapp:+14155238886",
+    "BaseUrl": "https://api.twilio.com",   // opcional
+    "SendTimeout": "00:00:20"               // opcional
+  },
+  "ConnectionStrings": {
+    "WhatsApp": "Server=.;Database=WhatsAppDb;Trusted_Connection=True;TrustServerCertificate=True"
+  }
+}

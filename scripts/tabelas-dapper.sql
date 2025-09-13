@@ -1,0 +1,23 @@
+CREATE TABLE Conversations (
+	Id UNIQUEIDENTIFIER NOT NULL PRIMARY KEY,
+	UserId NVARCHAR(40) NOT NULL UNIQUE,
+	UserName NVARCHAR(200) NULL,
+	CreatedAt DATETIMEOFFSET NOT NULL,
+	LastMessageAt DATETIMEOFFSET NULL,
+	AllowsContact BIT NULL,
+	AttributesJson NVARCHAR(8000) NOT NULL DEFAULT '{}'
+);
+
+
+CREATE TABLE ConversationMessages (
+	Id BIGINT IDENTITY(1,1) NOT NULL PRIMARY KEY,
+	ConversationId UNIQUEIDENTIFIER NOT NULL,
+	At DATETIMEOFFSET NOT NULL,
+	[From] NVARCHAR(40) NOT NULL,
+	[Text] NVARCHAR(4000) NOT NULL,
+	MetadataJson NVARCHAR(8000) NOT NULL DEFAULT '{}',
+	CONSTRAINT FK_ConversationMessages_Conversations FOREIGN KEY (ConversationId)
+	REFERENCES Conversations(Id) ON DELETE CASCADE
+);
+
+CREATE INDEX IX_ConversationMessages_ConversationId_At ON ConversationMessages(ConversationId, At);

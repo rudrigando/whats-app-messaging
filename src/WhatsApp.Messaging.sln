@@ -1,0 +1,64 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.14.36221.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WhatsApp.Messaging.Core", "Core\WhatsApp.Messaging.Core\WhatsApp.Messaging.Core.csproj", "{6B254EB5-AD8C-4772-92A4-D3D9D129CD8A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WhatsApp.Messaging.Twilio", "Providers\Twilio\WhatsApp.Messaging.Twilio\WhatsApp.Messaging.Twilio.csproj", "{F71043E0-C053-452E-91E1-F1FF0334D365}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "1 - Core", "1 - Core", "{02EA681E-C7D8-13C7-8484-4AC65E1B71E8}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "3 - Providers", "3 - Providers", "{551CA558-D436-4E99-9CCA-BE9D63D66159}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "3.1 - Twilio", "3.1 - Twilio", "{B765463A-1BB2-4C58-992E-4F4D5A2D8735}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "2 - Storage", "2 - Storage", "{15BCCCD7-F559-463F-B01C-0F62A4544A4E}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "2.1 - EF Core", "2.1 - EF Core", "{BC0F0CB7-91C7-428D-B195-7839D2F8FD84}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WhatsApp.Messaging.Storage.EFCore", "Storage\EFCore\WhatsApp.Messaging.Storage.EFCore\WhatsApp.Messaging.Storage.EFCore.csproj", "{99C1AED2-F8CC-4522-98B0-4F24F6D34BE7}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "2.2 - Dapper", "2.2 - Dapper", "{835E01BC-8BC9-4638-9A4E-1B2AE77C8768}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WhatsApp.Messaging.Storage.Dapper", "Storage\Dapper\WhatsApp.Messaging.Storage.Dapper\WhatsApp.Messaging.Storage.Dapper.csproj", "{5CAD5D02-41DF-4822-8591-728AADD6A6E5}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{6B254EB5-AD8C-4772-92A4-D3D9D129CD8A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6B254EB5-AD8C-4772-92A4-D3D9D129CD8A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6B254EB5-AD8C-4772-92A4-D3D9D129CD8A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6B254EB5-AD8C-4772-92A4-D3D9D129CD8A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F71043E0-C053-452E-91E1-F1FF0334D365}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F71043E0-C053-452E-91E1-F1FF0334D365}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F71043E0-C053-452E-91E1-F1FF0334D365}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F71043E0-C053-452E-91E1-F1FF0334D365}.Release|Any CPU.Build.0 = Release|Any CPU
+		{99C1AED2-F8CC-4522-98B0-4F24F6D34BE7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{99C1AED2-F8CC-4522-98B0-4F24F6D34BE7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{99C1AED2-F8CC-4522-98B0-4F24F6D34BE7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{99C1AED2-F8CC-4522-98B0-4F24F6D34BE7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5CAD5D02-41DF-4822-8591-728AADD6A6E5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5CAD5D02-41DF-4822-8591-728AADD6A6E5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5CAD5D02-41DF-4822-8591-728AADD6A6E5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5CAD5D02-41DF-4822-8591-728AADD6A6E5}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{6B254EB5-AD8C-4772-92A4-D3D9D129CD8A} = {02EA681E-C7D8-13C7-8484-4AC65E1B71E8}
+		{F71043E0-C053-452E-91E1-F1FF0334D365} = {B765463A-1BB2-4C58-992E-4F4D5A2D8735}
+		{B765463A-1BB2-4C58-992E-4F4D5A2D8735} = {551CA558-D436-4E99-9CCA-BE9D63D66159}
+		{BC0F0CB7-91C7-428D-B195-7839D2F8FD84} = {15BCCCD7-F559-463F-B01C-0F62A4544A4E}
+		{99C1AED2-F8CC-4522-98B0-4F24F6D34BE7} = {BC0F0CB7-91C7-428D-B195-7839D2F8FD84}
+		{835E01BC-8BC9-4638-9A4E-1B2AE77C8768} = {15BCCCD7-F559-463F-B01C-0F62A4544A4E}
+		{5CAD5D02-41DF-4822-8591-728AADD6A6E5} = {835E01BC-8BC9-4638-9A4E-1B2AE77C8768}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {27DD7DA3-0F20-410A-9565-D03E66B8025C}
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,22 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net9.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+<PackageId>WhatsApp.Messaging.Storage.Dapper</PackageId>
+<Description>Dapper storage for WhatsApp.Messaging.Core</Description>    <PackageId>WhatsApp.Messaging.Storage.Dapper</PackageId>
+    
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Dapper" Version="2.1.66" />
+    <PackageReference Include="Microsoft.Data.SqlClient" Version="6.1.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\Core\WhatsApp.Messaging.Core\WhatsApp.Messaging.Core.csproj" />
+  </ItemGroup>
+
+</Project>
