@@ -134,6 +134,7 @@ namespace WhatsApp.Messaging.Twilio.DependencyInjection
             services.TryAddSingleton<ITwilioSignatureValidator, TwilioSignatureValidator>();
             services.AddSingleton<IWebhookParser, TwilioWebhookParser>();
             services.AddSingleton<IMessageSender, TwilioMessageSender>();
+            services.AddSingleton<ITwilioTemplateSender, TwilioTemplateSender>();
 
             return services;
         }

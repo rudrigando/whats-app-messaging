@@ -11,8 +11,11 @@ namespace WhatsApp.Messaging.Twilio.Options
     {
         public string AccountSid { get; set; } = default!;
         public string AuthToken { get; set; } = default!;
-        public string? FromNumber { get; set; }              // e.g. "whatsapp:+14155238886"
-        public string? MessagingServiceSid { get; set; }     // alternativa ao FromNumber
-        public Uri? BaseUrl { get; set; }                    // override para testes/local]
+        public string? FromNumber { get; set; } 
+        public string? MessagingServiceSid { get; set; }
+        public Uri? BaseUrl { get; set; }
+
+        public Dictionary<string, TwilioContentTemplate> ContentTemplates { get; set; }
+           = new(StringComparer.OrdinalIgnoreCase);
     }
 }
