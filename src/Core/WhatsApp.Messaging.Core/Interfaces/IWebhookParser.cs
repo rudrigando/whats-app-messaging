@@ -1,4 +1,8 @@
-﻿using Microsoft.AspNetCore.Http;
+﻿//Copyright (c) 2025 Rodrigo de Freitas Oliveira
+//Todos os direitos reservados.
+//Uso, modificação e distribuição proibidos sem autorização.
+
+using Microsoft.AspNetCore.Http;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -17,3 +21,6 @@ namespace WhatsApp.Messaging.Core.Interfaces
         Task<IncomingMessage> ParseAsync(WebhookRequest request, CancellationToken ct = default);
     }
 }
+
+
+

@@ -1,4 +1,8 @@
-﻿using Polly;
+﻿//Copyright (c) 2025 Rodrigo de Freitas Oliveira
+//Todos os direitos reservados.
+//Uso, modificação e distribuição proibidos sem autorização.
+
+using Polly;
 using Polly.Contrib.WaitAndRetry;
 using Polly.Extensions.Http;
 using Polly.Timeout;
@@ -136,3 +140,6 @@ namespace WhatsApp.Messaging.Twilio.Http
         }
     }
 }
+
+
+

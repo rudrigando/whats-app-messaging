@@ -1,4 +1,8 @@
-﻿using Microsoft.EntityFrameworkCore;
+﻿//Copyright (c) 2025 Rodrigo de Freitas Oliveira
+//Todos os direitos reservados.
+//Uso, modificação e distribuição proibidos sem autorização.
+
+using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.DependencyInjection;
 using System;
 using System.Collections.Generic;
@@ -21,3 +25,6 @@ namespace WhatsApp.Messaging.Storage.EFCore.DependencyInjection
         }
     }
 }
+
+
+

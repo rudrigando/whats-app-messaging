@@ -1,4 +1,8 @@
-﻿using Microsoft.Extensions.DependencyInjection;
+﻿//Copyright (c) 2025 Rodrigo de Freitas Oliveira
+//Todos os direitos reservados.
+//Uso, modificação e distribuição proibidos sem autorização.
+
+using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.DependencyInjection.Extensions;
 using Microsoft.Extensions.Options;
 using System;
@@ -41,3 +45,5 @@ namespace WhatsApp.Messaging.Core.DependencyInjection
         }
     }
 }
+
+

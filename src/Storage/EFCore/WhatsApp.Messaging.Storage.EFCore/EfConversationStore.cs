@@ -1,4 +1,8 @@
-﻿using Microsoft.EntityFrameworkCore;
+﻿//Copyright (c) 2025 Rodrigo de Freitas Oliveira
+//Todos os direitos reservados.
+//Uso, modificação e distribuição proibidos sem autorização.
+
+using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -99,3 +103,6 @@ namespace WhatsApp.Messaging.Storage.EFCore
         private static string Serialize(Dictionary<string, string> d) => System.Text.Json.JsonSerializer.Serialize(d);
     }
 }
+
+
+

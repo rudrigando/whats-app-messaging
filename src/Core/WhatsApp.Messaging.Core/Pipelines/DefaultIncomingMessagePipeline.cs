@@ -1,4 +1,8 @@
-﻿using Microsoft.Extensions.Logging;
+﻿//Copyright (c) 2025 Rodrigo de Freitas Oliveira
+//Todos os direitos reservados.
+//Uso, modificação e distribuição proibidos sem autorização.
+
+using Microsoft.Extensions.Logging;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -43,3 +47,6 @@ namespace WhatsApp.Messaging.Core.Pipelines
         }
     }
 }
+
+
+

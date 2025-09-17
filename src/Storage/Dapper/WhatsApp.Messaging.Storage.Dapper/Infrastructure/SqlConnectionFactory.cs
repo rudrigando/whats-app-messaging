@@ -1,4 +1,8 @@
-﻿using Microsoft.Data.SqlClient;
+﻿//Copyright (c) 2025 Rodrigo de Freitas Oliveira
+//Todos os direitos reservados.
+//Uso, modificação e distribuição proibidos sem autorização.
+
+using Microsoft.Data.SqlClient;
 using System;
 using System.Collections.Generic;
 using System.Data;
@@ -15,3 +19,6 @@ namespace WhatsApp.Messaging.Storage.Dapper.Infrastructure
         public IDbConnection Create() => new SqlConnection(_connectionString);
     }
 }
+
+
+

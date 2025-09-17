@@ -1,4 +1,8 @@
-﻿using Microsoft.Extensions.Configuration;
+﻿//Copyright (c) 2025 Rodrigo de Freitas Oliveira
+//Todos os direitos reservados.
+//Uso, modificação e distribuição proibidos sem autorização.
+
+using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.DependencyInjection.Extensions;
 using Microsoft.Extensions.Options;
@@ -140,3 +144,6 @@ namespace WhatsApp.Messaging.Twilio.DependencyInjection
         }
     }
 }
+
+
+
