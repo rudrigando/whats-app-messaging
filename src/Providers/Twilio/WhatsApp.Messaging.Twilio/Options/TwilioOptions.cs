@@ -1,4 +1,8 @@
-﻿using System;
+﻿//Copyright (c) 2025 Rodrigo de Freitas Oliveira
+//Todos os direitos reservados.
+//Uso, modificação e distribuição proibidos sem autorização.
+
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -19,3 +23,6 @@ namespace WhatsApp.Messaging.Twilio.Options
            = new(StringComparer.OrdinalIgnoreCase);
     }
 }
+
+
+

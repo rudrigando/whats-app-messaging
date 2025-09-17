@@ -1,6 +1,6 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
-  <PropertyGroup>
+<PropertyGroup>
     <TargetFramework>net9.0</TargetFramework>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
@@ -9,10 +9,15 @@
 
     <PackageId>WhatsApp.Messaging.Storage.Dapper</PackageId>
     <Version>1.0.0</Version>
-    <Authors>Connect Solutions</Authors>
+    <Authors>Rodrigo de Freitas Oliveira</Authors>
+    <Company>Connect Solutions</Company>
+    <Copyright>Copyright (c) 2025 Rodrigo de Freitas Oliveira. Todos os direitos reservados.</Copyright>
+    <PackageLicenseExpression>Proprietary</PackageLicenseExpression>
+    <PackageProjectUrl>https://github.com/rodrigo-oliveira/whats-app-messaging</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/rodrigo-oliveira/whats-app-messaging</RepositoryUrl>
+    <PackageRequireLicenseAcceptance>true</PackageRequireLicenseAcceptance>
     <Description>Dapper storage for WhatsApp.Messaging.Core</Description>
     <PackageTags>whatsapp;messaging;dapper;storage</PackageTags>
-    <PackageLicenseExpression>MIT</PackageLicenseExpression>
     <GenerateDocumentationFile>true</GenerateDocumentationFile>
 
     <IncludeSymbols>true</IncludeSymbols>

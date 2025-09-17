@@ -1,4 +1,8 @@
-﻿using System.Text.Json;
+﻿//Copyright (c) 2025 Rodrigo de Freitas Oliveira
+//Todos os direitos reservados.
+//Uso, modificação e distribuição proibidos sem autorização.
+
+using System.Text.Json;
 using Microsoft.Extensions.Logging;
 using Microsoft.Extensions.Options;
 using Twilio.Clients;
@@ -46,3 +50,6 @@ namespace WhatsApp.Messaging.Twilio.Sending
         }
     }
 }
+
+
+

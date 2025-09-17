@@ -203,7 +203,16 @@ app.Run();
 
 ## Licença
 
-Este projeto está licenciado sob os termos da [Licença MIT](https://opensource.org/licenses/MIT).
+Este projeto está protegido por **Licença Proprietária**. Todos os direitos reservados.
+
+**Copyright (c) 2025 Rodrigo de Freitas Oliveira**
+
+- ✅ Uso interno permitido
+- ❌ Distribuição proibida
+- ❌ Revenda proibida
+- ❌ Cópia proibida
+
+Para mais informações, consulte [LICENSE_PROPRIETARY.md](LICENSE_PROPRIETARY.md).
 
 ---
 
