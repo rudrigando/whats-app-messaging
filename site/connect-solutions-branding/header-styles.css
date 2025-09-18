@@ -1,0 +1,118 @@
+/* Connect Solutions Header Styles */
+/* Use este CSS para estilizar o header em outros projetos */
+
+/* Importar fontes necessárias */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css');
+
+/* Header base */
+.header {
+    background: rgba(255, 255, 255, 0.95);
+    backdrop-filter: blur(10px);
+    padding: 1rem 0;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    box-shadow: 0 2px 20px rgba(0, 0, 0, 0.1);
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Branding area */
+.header-brand {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.company-logo {
+    flex-shrink: 0;
+}
+
+/* Logo do produto */
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #667eea;
+    text-decoration: none;
+    font-family: 'Inter', sans-serif;
+}
+
+.logo i {
+    font-size: 2rem;
+    color: #667eea;
+}
+
+/* Menu de navegação */
+.nav-links {
+    display: flex;
+    gap: 2rem;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-links li {
+    min-width: 100px;
+    text-align: center;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #333;
+    font-weight: 500;
+    transition: color 0.3s ease;
+    font-family: 'Inter', sans-serif;
+}
+
+.nav-links a:hover {
+    color: #667eea;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .nav-links {
+        display: none;
+    }
+    
+    .header-brand {
+        gap: 15px;
+    }
+    
+    .company-logo {
+        width: 200px;
+        height: 25px;
+    }
+    
+    .logo {
+        font-size: 1.3rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .company-logo {
+        width: 160px;
+        height: 20px;
+    }
+    
+    .logo {
+        font-size: 1.1rem;
+    }
+    
+    .logo i {
+        font-size: 1.5rem;
+    }
+}
